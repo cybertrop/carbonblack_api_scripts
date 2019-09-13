@@ -3,10 +3,10 @@
 
 file="$1"
 for x in file; do
-  cat binary_search_data.txt |
-  sed "s/u'/'/g" |
-  sed "s/'/\"/g" |
-  sed "s/True/\"True\"/g" |
-  grep -Ei "{.*}" |
-  sed "s/Original Document    : //g"
+  cat binary_search_data.txt
+  | sed "s/u'/'/g"
+  | sed "s/'/\"/g" 
+  | sed "s/True/\"True\"/g" 
+  | grep -Ei "{.*}" 
+  | sed "s/Original Document    : //g"
 done
